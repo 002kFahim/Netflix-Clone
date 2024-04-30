@@ -32,6 +32,7 @@ const Auth = () => {
                   label="Username"
                   onChange={(ev: any) => setName(ev.target.value)}
                   id="name"
+                  type="name"
                   value={name}
                 />
               )}
@@ -52,7 +53,7 @@ const Auth = () => {
               />
             </div>
             <button className="bg-red-600 py-3 text-white rounded-md w-full mt-10 hover:bg-red-700 transition">
-              {variant == "login" ? "login" : "Sign Up"}
+              {variant == "login" ? "Login" : "Sign Up"}
             </button>
             <p className="text-neutral-500 mt-12">
               {variant === "login"
@@ -62,7 +63,7 @@ const Auth = () => {
                 onClick={toggleVariant}
                 className="text-white ml-1 hover:underline cursor-pointer"
               >
-                {variant === "login" ? "Create an account" : "login"}
+                {variant === "login" ? "Create an account" : "Login"}
               </span>
             </p>
           </div>
